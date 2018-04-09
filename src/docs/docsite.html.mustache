@@ -69,15 +69,21 @@
         <div class="site-toc">
           <ul>
             {{#site_toc}}
+
+              {{^link}}
+                <li class="toc-h{{depth}} toc-heading">
+                  <a class="sidebar-nav-heading" data-toggle="collapse"
+                href="#concepts-menu" aria-expanded="false"
+                aria-controls="concepts-menu">
+                {{text}}<span class="caret"></span></a>
+                </li>
+              {{/link}}
               {{#link}}
+              <ul class="collapse sidebar-nav sidebar-submenu" id="concepts-menu">
                 <li class="toc-h{{depth}} toc-link {{#here}}toc-here{{/here}}">
                   {{^here}}<a href="{{link}}">{{/here}}{{text}}{{^here}}</a>{{/here}}
                 </li>
-              {{/link}}
-              {{^link}}
-                <li class="toc-h{{depth}} toc-heading">
-                  {{text}}
-                </li>
+                </ul>
               {{/link}}
             {{/site_toc}}
           </ul>
@@ -115,7 +121,9 @@
   </div> <!-- container-fluid -->
 
 </div> <!-- page -->
-<footer class="row col-md-12" id="contact">
+
+
+<footer class="col-md-12" id="contact"><!-- footer -->
   <ul>
     <li>©Pants 2018</li>
   </ul>
