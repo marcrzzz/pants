@@ -73,16 +73,16 @@
               {{^link}}
                 <li class="toc-h{{depth}} toc-heading">
                   <a class="sidebar-nav-heading" data-toggle="collapse"
-                href="#concepts-menu" aria-expanded="false"
-                aria-controls="concepts-menu">
-                {{text}}<span class="caret"></span></a>
+                    href="#concepts-menu" aria-expanded="false"
+                    aria-controls="concepts-menu">
+                    {{text}}<span class="caret"></span></a>
                 </li>
               {{/link}}
               {{#link}}
-              <ul class="collapse sidebar-nav sidebar-submenu" id="concepts-menu">
-                <li class="toc-h{{depth}} toc-link {{#here}}toc-here{{/here}}">
-                  {{^here}}<a href="{{link}}">{{/here}}{{text}}{{^here}}</a>{{/here}}
-                </li>
+                <ul class="collapse sidebar-nav sidebar-submenu" id="concepts-menu">
+                  <li class="toc-h{{depth}} toc-link {{#here}}toc-here{{/here}}">
+                    {{^here}}<a href="{{link}}">{{/here}}{{text}}{{^here}}</a>{{/here}}
+                  </li>
                 </ul>
               {{/link}}
             {{/site_toc}}

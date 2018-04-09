@@ -132,18 +132,14 @@
         { "page": "reporting_server" },
         { "page": "ide_support" },
 
-        { "heading": "JVM" },
+        { "heading": "Language Support" },
         { "page": "jvm_projects" },
         { "page": "3rdparty_jvm" },
         { "page": "scala" },
         { "page": "publish" },
         { "page": "from_maven" },
-
-        { "heading": "Python" },
         { "page": "python_readme" },
         { "page": "3rdparty_py" },
-
-        { "heading": "Go" },
         { "page": "go_readme" },
 
         {"heading": "Codegen"},
