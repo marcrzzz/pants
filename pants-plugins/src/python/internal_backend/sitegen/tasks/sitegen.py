@@ -256,7 +256,8 @@ def generate_site_toc(config, precomputed, here):
         site_toc.append(dict(depth=depth_so_far,
                              link=None,
                              text=heading,
-                             here=False))
+                             here=False,
+                             id=heading.replace(' ','-')))
       if 'page' in node and node['page'] != 'index':
         dst = node['page']
         if dst == here:
@@ -266,7 +267,8 @@ def generate_site_toc(config, precomputed, here):
         site_toc.append(dict(depth=depth_so_far,
                              link=link,
                              text=precomputed.page[dst].title,
-                             here=(dst == here)))
+                             here=(dst == here),
+                             id=heading.replace(' ','-')))
       if 'children' in node:
         recurse(node['children'], depth_so_far + 1)
   if 'tree' in config:
