@@ -1,4 +1,0 @@
-[package]
-version = "0.0.1"
-name = "testutil"
-authors = [ "Pants Build <pantsbuild@gmail.com>" ]

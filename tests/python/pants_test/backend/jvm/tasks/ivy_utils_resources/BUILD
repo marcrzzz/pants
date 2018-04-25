@@ -1,1 +1,0 @@
-files(sources=globs('*.xml'))
